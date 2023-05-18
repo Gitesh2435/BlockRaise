@@ -6,7 +6,7 @@ const FundCard = ({ owner, title, description, target, deadline, amountCollected
   const remainingDays = daysLeft(deadline); 
   
   return (
-    <div className='sm:w-[288px] w-full rounded-[15px] bg-[#1c1c24] cursor-pointer' onClick={handleClick}>
+    <div className={`${(remainingDays > 0 && amountCollected < target) ? 'sm:w-[288px] w-full rounded-[15px] bg-[#1c1c24] cursor-pointer' : 'hidden'}`} onClick={handleClick}>
       <img src={image} alt='fund' className='w-full h-[158px] object-cover rounded-[15px]'/>
 
       <div className='flex flex-col p-4'>
