@@ -17,7 +17,7 @@ To run the project locally, follow these steps:
 1. Clone the repository: `git clone https://github.com/your-username/BlockRaise.git`
 2. Install dependencies: `npm install`
 3. Start the development server: `npm run dev`
-4. Access the application in your browser at `http://localhost:3000`
+4. Access the application in your browser at `http://127.0.0.1:5173/`
 
 ## Smart Contracts
 
